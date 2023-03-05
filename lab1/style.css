@@ -1,3 +1,80 @@
 body{
+    margin: 0;
     background-color: #222;
 }
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;    
+}
+
+#one{
+    background-color: #f79647;
+    height: calc(100vh/3); width: 100vw;
+    background-image: url(1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#two{
+    background-color: #404040;
+    height: calc(100vh/3); width: calc(100vw/3);
+    float: left;
+}
+#three{
+    background-color: #948b54;
+    height: calc(100vh/3); width: calc(100vw/3);
+    float: left;
+}
+#four{
+    background-color: #c4d69c;
+    height: calc(100vh/3); width: calc(100vw/3);
+    float: left;
+}
+#five{
+    background-color: #ecf0df;
+    height: calc(100vh/3); width: 100vw;
+    float: left;
+}
+
+@media (min-width: 480px) and (max-width: 640px){
+
+    #one,#two,#three,#four,#five{
+        height: calc(100vh/4); width: 100vw;
+        clear: both;
+    }
+    #two,#three{
+        width: 50vw;
+        float: left;
+        clear: none;
+    }
+    #one{        
+        background-image: url(2.png);
+    }
+    #five{        
+        font-size: 24px;    
+    }
+}
+
+@media (min-width: 0px) and (max-width: 480px){
+
+    #one,#two,#three,#four,#five{
+        height: calc(100vh/4);
+        clear: both;
+    }
+    #two,#three,#four{
+        width: 100vw;
+    }
+    #four{
+        display: none;
+    }
+    #one{        
+        background-image: url(3.png);
+    }
+    #five{        
+        font-size: 32px;    
+    }
+}
+   
