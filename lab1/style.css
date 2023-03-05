@@ -20,17 +20,17 @@ div{
 }
 #two{
     background-color: #404040;
-    height: calc(100vh/3); width: calc(100vw/3);
+    height: calc(100vh/3); width: 33.33%;
     float: left;
 }
 #three{
     background-color: #948b54;
-    height: calc(100vh/3); width: calc(100vw/3);
+    height: calc(100vh/3); width: 33.33%;
     float: left;
 }
 #four{
     background-color: #c4d69c;
-    height: calc(100vh/3); width: calc(100vw/3);
+    height: calc(100vh/3); width: 33.33%;
     float: left;
 }
 #five{
